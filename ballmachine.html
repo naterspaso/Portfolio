@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Machine</title>
+  <link rel="stylesheet" href="KK.css">
+  <script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper">
+    <ul class="nav-menu">
+      <li><a href="index.html#header">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title Section -->
+  <div class="content-section">
+    <h1>Baseball Pitching Machine</h1>
+    <p>by Nathan Su</p>
+  </div>
+
+
+  <!-- Project Overview -->
+  <div class="content-section description">
+    <p>My friends and I love playing baseball every now and then. However, not everyone in the group is the best at accurately throwing a baseball. To remedy this problem, I made a pitching machine which accurately delivers a ball from a little league pitching mount at around 40mph.</p>
+  </div>
+
+  <!-- Design Process -->
+  <div class="content-section">
+    <h2>Design Process</h2>
+    <ul class="project-list">
+      <li><strong>Design:</strong> I first looked at pitching machines which were already available on the market. The cheapest one was $200 on Amazon. While higher end machines used two or three spinning wheels to launch the ball, I did not want to buy more than one motor due to cost. So, I designed a machine with one wheel that compresses the baseball against a 3d printed track to launch.
+      <li><strong>Materials:</strong>  I used 2x4 and plywood to build an inexpensive frame for the motor to sit on and used 3d printed parts for parts needing more detail and tighter tolerance. The wood cost under $10 and the amount of PLA filament used was under 0.25kg. </li>
+      <li><strong>Motor:</strong> The motor I used was a 24v 350W motor that spun up to 3000 rpm. The wheel was an 8 inch wheel that I got from Harbor Freight. I calculated that the tangential speed of the wheel at 3000 rpm was around 70mph. However the ball would not go that fast as there would be slip between the ball and the wheel. I estimated 50% slip which is how I got 40mph as the speed</li>
+    </ul>
+  </div>
+
+  <!-- Future Improvements -->
+  <div class="content-section">
+    <h2>Future Improvements</h2>
+    <ul class="project-list">
+      <li><strong>Balance Wheel:</strong> Since the wheel from Harbor Freight was meant for a wheelbarrow, it was likely never designed to see such high rpm. As a result, it was not balanced well and caused vibrations. It also caused the wheel to hit the wood and spray bits of the tires everywhere. To remedy this, I would like to find a way to balance the wheel. The wheel's bearings were also not made for a high speed, as they made a high pitched whine at high rpm.</li>
+      <li><strong>Fastening:</strong> The battery and motor controller sat on the ground as there was no other secure place where they did not fall. This caused them to be caked in dirt, whcih I worry would get into the connections and cause resistance.</li>
+      <li><strong>Automatic Feeding:</strong> I wanted to make a mechanism which automatically feeds balls into the machine. It consists of a 3d printed spiral ramp where the balls would be stored. Two servo motors would open and close at the according timings with the push of a button on an IR remote. I had designed the assembly in CAD and had an Arduino code that works in a simulation software, but did not have time to make it.
+    </ul>
+  </div>
+
+  <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/ballmachinecad.jpg" alt="Step 1">
+      <img src="images/ballmachine1.jpg" alt="Step 2">
+      <img src="images/BallMachineTN.png" alt="Step 3">
+    </div>
+  </div>
+
+</body>
+</html>

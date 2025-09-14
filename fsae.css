@@ -1,0 +1,126 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #0F3D0F, #665100);
+    scroll-behavior: smooth;
+  }
+  
+/* Top Navigation Bar */
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000; /* above everything else */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7982fd79;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+
+  /* Content Sections */
+  .content-section {
+    height: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+  }
+  
+  .content-section.description {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .content-section h1,
+  .content-section p {
+    max-width: 800px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .project-list {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .project-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .image-gallery img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .image-stack img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }

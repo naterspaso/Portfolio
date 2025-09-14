@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racecar Intake Plenum</title>
+  <link rel="stylesheet" href="KK.css">
+  <script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper">
+    <ul class="nav-menu">
+      <li><a href="index.html#header">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title Section -->
+  <div class="content-section">
+    <h1>Racecar Intake Plenum</h1>
+    <p>by Nathan Su</p>
+  </div>
+
+ <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/intake.jpg" alt="Step 1">
+    <div>
+  <div>
+
+
+
+  <!-- Project Overview -->
+  <div class="content-section description">
+    <p>The intake plenum of a car is what connects the throttle body to the intake runners of an engine. The purpose of the plenum (along with the runners) is to optimize air flow into the engine. Improving the airflow will improve the engine's throttle response and allow it to intake more air, leading to more horsepower potential. Since the competition rules require a restrictor after the throttle, the goal is to increase the air mass flow rate allowing the engine to make more power.</p>
+  </div>
+
+  <!-- Design Process -->
+  <div class="content-section">
+    <h2>Design Process</h2>
+    <ul class="project-list">
+      <li><strong>Requirements:</strong> I had to design an intake with 1.5L-5L in volume that can legally (per FSAE rules) fit on the current car's intake plenum. It should feed all four cylinders an equal amount of air and should increase the overall mass flow rate comapred to the old design.
+      <li><strong>Initial Idea:</strong> FSAE team member wanted me to first look into a "double lung" plenum design. However, it yielded poor results in CFD sims</li>
+      <li><strong>Exploring different designs:</strong> I took inspiration from previous intake designs, as well as other FSAE teams' designs. I modified and combined designs based on concepts that I saw, as well as using basic fluid mechanics principles (bernoulli's equation) </li>
+      <li><strong>Design Flexibility:</strong> An issue that occurred was that my first designs were very hard to make small changes to. If I wanted to change the diameter of a section slightly, the model would break. So for my new design, I made sure to make it easy to change parameters in CAD so I could converge onto the exact optimal dimensions by making fine adjustments based on what the CFD showed. </li>
+      <li><strong>Manufacturing:</strong>The intake would be 3D printed out of carbon fiber nylon filament.</li>
+    </ul>
+  </div>
+
+  <!-- Final Result -->
+  <div class="content-section">
+    <h2>Final Result</h2>
+    <ul class="project-list">
+      <li><strong>Increased Mass Flow Rate:</strong> My final intake design had a mass flow rate of 0.211 kg/s while the original intake had a flow rate of 0.200 kg/s. This showed a 5.5% improvement which is significant since the restrictor greatly effects the amount of air the engine is able to intake.</li>
+      <li><strong>Manufacturing:</strong> Unfortunately, due to time contraints, the intake was never printed and tested on the BM-24 racecar as the team had to leave for competition. However I ended up 3D printing it out of PLA just for myself to enjoy.</li>
+    </ul>
+  </div>
+
+  <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/intakefinal.png" alt="Step 1" class="intakeClass">
+      <img src="images/doubleplenum.png" alt="Step 2">
+      <img src="images/intake3.png" alt="Step 3">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movement Activated Controller</title>
+  <link rel="stylesheet" href="KK.css">
+  <script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper">
+    <ul class="nav-menu">
+      <li><a href="index.html#header">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title Section -->
+  <div class="content-section">
+    <h1>DIY KrazyKart</h1>
+    <p>by Nathan Su</p>
+  </div>
+
+  <!-- Project Overview -->
+  <div class="content-section description">
+    <p>I took inspiration from TaxiGarage, a company who professionally makes and sells KrazyKarts. There are many videos on the internet of people drifting their karts around town, going sideways around corners and having a great time. However, these karts are expensive, with the cheapest full sized (non-kids) kart starting at $900. Taking a closer look at their design, I saw how simple it was, and I thought it would be a fun project to make my own from scratch. In this project, I flux-core welded, learned about motor controllers, programmed an Arduino, designed the kart in CAD, and transformed my CAD model into real life.</p>
+  </div>
+
+  <!-- Project Details -->
+  <div class="content-section">
+    <h2>Project Details</h2>
+    <ul class="project-list">
+      <li><strong>Material Selection:</strong> I initially was planning to make it mostly out of wood due to the lower cost. However, I found a cheap welder on Craigslist so I decided that this would be a great opportunity to learn how to weld. </li>
+      <li><strong>CAD Design</strong> I made a CAD assembly for the kart. I designed it to be easy to manufacture and used designs similar to those of cars and bicycles make the kart perform how I wanted.</li>
+      <li><strong>Manufacturing:</strong> I bought materials for manufacturing using the bill of materials (BOM) I made for the kart based off my model. After buying the welder and necessary tools, I begain cutting, notching, and welding tubes, using the engineering drawings I made in CAD.</li>
+      <li><strong>Motor Control:</strong> I used a 350W hub motor from a rental scooter as the front wheel to power the kart. I hooked it up to a generic 36v motor controller from Amazon. It was a little tricky to match the correct hall and phase wires, but eventually I got everything running. However, the throttle pedal I had gave a analog 0.8v-5v signal while the controller wanted a 0v-5v PWM signal. To solve this issue I used an Arduino to convert the analog signal to a digital one.</li>
+    </ul>
+  </div>
+
+  <!-- Future Improvements -->
+  <div class="content-section">
+    <h2>Future Improvements</h2>
+    <ul class="project-list">
+      <li><strong>Stability:</strong> The kart would start to violently wobble at higher speed when a bump was hit. To reduce this, I would angle the fork away from the driver to induce a self-centering force on the wheel due to the mechanical trail.</li>
+      <li><strong>Metal Floor:</strong> Due to a lack of time, I had to resort to using a thin, rain soaked piece of plywood as the floor. This was not sturdy whatsoever and made fastening electronics like the throttle, controller, and battery not secure. Ideally, I would use a piece of thin sheet metal as the floor.</li>
+      <li><strong>Fastening Electronics:</strong> Also due to a lack of time, I did not have securely fastened electronics. I had only had time to 3d print a box for the Arduino. The other components like the battery and controller were ziptied and taped to the wooden floor. I would have liked to design a 3d printed box that could hold all of the electronics securely. This box would have holes for ventilation and bolt holes to be secured to the metal floor.</li>
+    </ul>
+  </div>
+
+  <!-- Full Report -->
+  <div class="content-section">
+    <h2>Full Design Report</h2>
+    <ul class="project-list">
+	<li><strong>Please check out the full design report:</strong> <a href="PDFs/KKpdf.pdf">Click here</a> to access the full design report that I made for the project. It is much more in depth than this short report and shows every single thing that went into designing and manufacturing the KrazyKart</li>
+	<ul>
+  </div>
+
+  <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/KartCAD.png" alt="Step 1">
+      <img src="images/weld.png" alt="Step 2">
+      <img src="images/fork.png" alt="Step 3">
+    </div>
+  </div>
+
+</body>
+</html>

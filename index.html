@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content ="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nathan Su</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+	<script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<h1> <span style="color: yellow">Nathan Su<br> </span></h1>
+			<h2> Mechanical Engineering B.S </h2>
+			<h2>Walnut, California </h2>
+		</div>
+	</div>
+</div>
+<!------about------>
+<div id="about"></div>
+<div class="container">
+	<div class="row">
+		<div class="about-col-1">
+			<img src="images/drivesliscence.jpg">
+		</div>
+		<div class="about-col-2">
+			<h1 class="sub-title">About Me</h1>
+			<p>I am a fourth-year Mechanical Engineering student at Cal Poly Pomona who is eager to apply classroom knowledge and project experience to a professional setting. My interests lie in mechanical design, fabrication, and testing. I am especially motivated by opportunities that blend creativity with technical problem-solving. I am passionate about turning ideas into practical solutions and excited to contribute to projects that push engineering innovation forward.</p>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>CAD</span><br>Proficient in SOLIDWORKS and Fusion360, using it in every notable project I have completed.
+						<li><span>Manufacturing</span><br>Experience with welding (flux core, TIG, MIG), 3-axis CNC mill & lathe, sheet metal forming, casting, and hand+power tools</li>
+						<li><span>Computational Analysis</span><br>Utilizing software simulations: SOLIDWORKS FEA, fatigue analysis, Topology Optimization; Fusion360 Generative Design</li>
+						<li><span>Software</span><br>MATLAB(+Simulink) and Excel </li>
+						<li><span>Electronics</span><br>Motor Controllers, Arduinos, Soldering, FDM 3D printing</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span>Dr. Nina Vinh DDS (2018-2023)</span><br>Assistant</li>
+						<li><span>Sports Basement (2021-2022)</span><br>Bike Floor/Rentals Associate</li>
+						<li><span>Cold Stone Creamery (2024-2024)</span><br>Team Member</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2022-2026 (projected)</span><br>Mechanical Engineering B.S at Cal Poly Pomona<br> GPA: 3.61</li>
+						<li><span>2018-2022</span><br>Mission San Jose High School<br>GPA: 3.73</li>
+
+					</ul>
+				</div>
+		</div>
+	</div>
+</div>
+<!------------services--------->
+<div id="services" hidden>
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>		
+		<div class="services-list">
+			
+			<div>
+				<i class="fa-solid fa-chalkboard-user"></i>
+				<h2>Tutoring</h2>
+				<p>I can help you learn in any math class ranging from Pre-Algebra to Calculus!</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------portfolio--------->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">Portfolio</h1>	
+		<div class="work-list">
+			<div class="work">
+				<img src="images/HnU.png" >
+				<div class="layer">
+					<h3>Hubs and Uprights Vehicle System</h3>
+					<p>Designed, built, tested the Hubs and Uprights subsystem for the FSAE BM-25 racecar. </p>
+					<a href="HnU.html#music"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/KrazyKart.jpg" >
+				<div class="layer">
+					<h3>KrazyKart</h3>
+					<p>Designed and fabricated a "KrazyKart" drift go-kart from scratch</p>
+					<a href="KrazyKartOutline.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/Intake.jpg" >
+				<div class="layer">
+					<h3>BM-24 Intake Plenum</h3>
+					<p>Developed a prototype intake plenum design with a 5.5% increase in mass flow rate versus the original.</p>
+					<a href="intake.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+				
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/BallMachineTN.png" >
+				<div class="layer">
+					<h3>Baseball Pitching Machine</h3>
+					<p>Designed and built a baseball pitching machine that could launch a baseball ~40mph from a little league pitching mound.</p>
+					<a href="ballmachine.html#music"><i class="fa-solid fa-up-right-from-square"></i></a>
+				
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/Clevis.png" >
+				<div class="layer">
+					<h3></h3>
+					<p>Improved the serviceability of the design of a clevis that connects the racecar's suspension arm to the upright.</p>
+					<a href="clevis.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Project Teams Section -->
+<div id="project-teams">
+	<div class="container">
+	  <h1 class="sub-title">Project Teams</h1>
+	  <div class="work-list" style="width:30%">
+		<!-- Team 1 -->
+		<div class="work">
+		  <img src="images/fsaeLOGO.jpeg" alt="Team 1">
+		  <div class="layer">
+			<h3>Bronco Motorsports (CPP FSAE Team Internal Combustion Engine) </h3>
+			<p>Hubs and Uprights Subsystem Captain </p>
+			<a href="fsae.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+		  </div>
+		</div>
+			  </div>
+	</div>
+  </div>
+  
+<!------------contact--------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-inbox"></i>nayythan24@gmail.com</p>
+				
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/nathan-su1024"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+				
+			</div>
+					</div>
+	</div>
+<div class="copyright">Copyright © Nathan Su</div>
+</div>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link")
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab")
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+<script>
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

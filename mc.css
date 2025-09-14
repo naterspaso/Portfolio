@@ -1,0 +1,104 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Monaco, monospace;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #2a2a2a, #111111);
+  scroll-behavior: smooth;
+  color: white;
+}
+
+/* Navigation */
+.nav-wrapper {
+  padding: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-menu li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #7982fd79;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Content Sections */
+.content-section {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-section.description {
+  background-color: transparent;
+}
+
+.content-section h1,
+.content-section h2,
+.content-section p {
+  max-width: 800px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.project-list {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.project-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+$1width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+h2 {
+  color: Yellow;
+}
+

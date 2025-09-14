@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubs and Uprights</title>
+  <link rel="stylesheet" href="KK.css">
+  <script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper">
+    <ul class="nav-menu">
+      <li><a href="index.html#header">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title Section -->
+  <div class="content-section">
+    <h1>Hubs and Uprights Vehicle System</h1>
+    <p>by Nathan Su</p>
+  </div>
+
+  <!-- Project Overview -->
+  <div class="content-section description">
+    <p>As the hubs and uprights subsystem captain for Bronco Motorsports, I was responsible for the designing, manufacturing, and testing of the car's hubs and uprights. This is an essential system to the car, as it structurally connects the wheel to the rest of the suspension system and also serves as the mounting point for the brakes and steering arms.</p>
+  </div>
+
+  <!-- Project Details -->
+  <div class="content-section">
+    <h2>Project Details</h2>
+    <ul class="project-list">
+      <li><strong>Goals:</strong> The most important overall vehicle goal I designed for was reliability. With our car breaking down at past competitions, I went for a  back to basics approach when designing the system. I settled on making a design that was machinable with a 3-axis CNC mill with higher factors of safety. It is made out of 7075 T6 Aluminum for its light, strong, and stiff properties.</li>
+      <li><strong>Analysis/Validation:</strong> To ensure reliabilty and performance, I performed both an FEA and fatigue analysis on the system in SOLIDWORKS. I then compared these values against the previous design to rationalize any design changes I had made. To get the force values for these simulations, our team used a software called OptimumKinetics to translate the lateral g-forces our car was pulling into forces applied on the suspension components. I double checked these values with hand-calculations using the math I learned in my Statics class.</li>
+      <li><strong>Manufacturing</strong> To machine the components, I worked with local machine shop sponsors by sending them the appropriate CAD models and engineering drawings with the specified tolerances. I checked in weekly to ensure that they were on schedule.</li>
+      <li><strong>Testing:</strong> I had performed a dye penetrant test on the old uprights to see if there were any cracks. If there were cracks, this would show that the simulation results may be inaccurate and that I should increase the factor of safety for my uprights. However, there were none so I kept a similar FOS. I also wanted to attach strain gauges on the uprights when the car was driving in order to compare the real life stresses to the stresses showed in the simulation. Unfortunately, we did not have time to perform this test.</li>
+    </ul>
+  </div>
+
+  <!-- Future Improvements -->
+  <div class="content-section">
+    <h2>Future Improvements (2025-2026 season)</h2>
+    <ul class="project-list">
+      <li><strong>Shave Weight with Generative Design:</strong> For the 2025-2026 school year, I want to use the generative design tool in Fusion360 to make an upright with the most optimial geometry to achieve my desired weight and stiffness parameters.</li>
+      <li><strong>Refinement:</strong> Get rid of all of the small quirks to make the system easier to work on.</li>
+    </ul>
+  </div>
+
+   <!-- Full Report -->
+  <div class="content-section">
+    <h2>Full Design Binder</h2>
+    <ul class="project-list">
+	<li><strong>PDF of my full design binder:</strong> Click here to access the full design binder that I presented to the judges at the competition in Michigan. It is much more in depth than this short report and shows every single thing that went into designing the Hubs and Uprights</li>
+
+	<a href="PDFs/Hnu.pdf"><img src="images/designbinder.png" alt="Step 1"></a>
+	<ul>
+  </div>
+
+
+  <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/frontupright.jpg" alt="Step 1">
+      <img src="images/rearupright.jpg" alt="Step 2">
+      <img src="images/step3.png" alt="Step 3">
+    </div>
+  </div>
+
+</body>
+</html>
