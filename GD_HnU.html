@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Design Hubs and Uprights</title>
+  <link rel="stylesheet" href="KK.css">
+  <script src="https://kit.fontawesome.com/cc6fc5e849.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-wrapper">
+    <ul class="nav-menu">
+      <li><a href="index.html#header">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Title Section -->
+  <div class="content-section">
+    <h1>Generative Design Hubs and Uprights (2025-2026) </h1>
+    <p>by Nathan Su</p>
+  </div>
+
+  <!-- Project Overview -->
+  <div class="content-section description">
+    <p>In the second year of being the captain of the hubs and uprights subsystem, I utilized generative shape design in Fusion to reduce weight
+	by up to 30% while maintaining stiffness and reliability. I then validated this design using multi-body FEA simulations to simulate static 
+	stress, fatigue, and vibration characteristics of the new parts. This design change was warranted due to the new season's goal of refinement for 
+	performance, an increased budget, and advancements in my engineering skills. </p>
+  </div>
+
+  <!-- Project Details -->
+  <div class="content-section">
+    <h2>Project Details</h2>
+    <ul class="project-list">
+
+      <li><strong>Goals:</strong> After achieving the previous year's goal of reliability, this year, I wanted to focus back towards performance. While reliability is still very important, there is a difference between something being reliable, and being extremely overbuilt. To achieve this, I defined mandatory performance metrics, such as having a minimum factor of safety of 1.5, quantifying deflection with tire performance, and reducing weight by at least 10% on all components. For manufacturing, the new generative designed uprights will be made via 5-axis CNC mill out of 7075 T6 Al for a high strength to weight ratio and machinability.</li>
+
+      <li><strong>The Generative Design Process</strong> Generative shape design is a CAD method that uses defined loads, constraints, materials, and manufacturing requirements to automatically generate optimized part geometries. It typically produces lightweight designs that maintain required strength while minimizing material and weight. I first defined preserve zones, which are areas that must have a clean geometry. This included the a-Arm clevis mounting interface, tie-rod mount, brake caliper mounts, and wheel bearing races. I then defined keep-out zones, which are areas where other parts will sit. Making these keep out zones ensures that the geometry generated does not interfere with anything. I then input typical FEA boundary conditions, such as fixture locations, loads, and a mesh detail. Finally, I input my final simulation goals, which are a factor of safety above 1.5 and a first natural frequency of above 600 Hz.</li>
+
+      <li><strong>Analysis</strong> Once a new generative geometry was made, I imported it into SolidWorks to perform simulations on it to verify its properties. For the uprights, I used a similar simulation setup and loads as the previous year's uprights. However, for the hubs, I used a multi-part simulation, adding the wheel and tire, wheel nut, and wheel bearings. This is so that I can apply an external force to the tire which propagated throughout the other connected parts, providing a more accurate simulation result. I also validated my mesh by using h-refinement, as well as using a constant mesh of 1/64 in element size with the theory that no endmills will create a feature smaller than the element size. </li>
+
+      <li><strong>Testing:</strong> Dye penetrant tests were performed throughout the testing cycle to catch any cracks that were forming. The tests always came back negative. There were plans to implement strain gauges to validate the simulated stress compared to the real life stress. However, the tests were unable to be conducted. </li>
+    </ul>
+  </div>
+
+ 
+   <!-- Full Report -->
+  <div class="content-section">
+    <h2>Full Design Binder</h2>
+    <ul class="project-list">
+	<li><strong>PDF of my full design binder:</strong> Click the Design Binder thumbnail to access the full design binder which is in depth, technical documentation for the project.</li>
+
+	<a href="PDFs/GD_HnU_DB.pdf"><img src="images/GD_HnU_DB_TN.png" alt="Step 1"></a>
+	<ul>
+  </div>
+
+
+  <!-- Images Section -->
+  <div class="content-section">
+    <div class="image-stack">
+      <img src="images/GD_Upright_Assy_Front.png" alt="Step 1">
+      <img src="images/GD_Upright_Assy_Rear.png" alt="Step 2">
+      <img src="images/GD_Upright_Assy.png" alt="Step 3">
+      <img src="images/GD_Upright_Assy_Hubs.png" alt="Step 4">
+
+
+
+      
+    </div>
+  </div>
+
+</body>
+</html>

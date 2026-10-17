@@ -23,10 +23,32 @@
 			</ul>
 			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
 		</nav>
-		<div class="header-text">
-			<h1> <span style="color: yellow">Nathan Su<br> </span></h1>
-			<h2> Mechanical Engineering B.S </h2>
-			<h2>Walnut, California </h2>
+
+		<div class="header-content">
+
+			<div class="header-text">
+				<h1><span style="color: yellow">Nathan Su<br></span></h1>
+				<h2>Mechanical Engineering B.S</h2>
+				<h2>Walnut, California</h2>
+			</div>
+
+			<div class="header-contact" id="contact">
+				<a href="https://www.linkedin.com/in/nathan-su1024"
+				   target="_blank"
+				   rel="noopener noreferrer"
+				   class="linkedin-link">
+					<i class="fa-brands fa-linkedin"></i>
+					<span>LinkedIn</span>
+				</a>
+
+				<a href="mailto:nayythan24@gmail.com">
+					<i class="fa-solid fa-envelope"></i>
+					nayythan24@gmail.com
+				</a>
+
+
+			</div>
+
 		</div>
 	</div>
 </div>
@@ -39,7 +61,7 @@
 		</div>
 		<div class="about-col-2">
 			<h1 class="sub-title">About Me</h1>
-			<p>I am a fourth-year Mechanical Engineering student at Cal Poly Pomona who is eager to apply classroom knowledge and project experience to a professional setting. My interests lie in mechanical design, fabrication, and testing. I am especially motivated by opportunities that blend creativity with technical problem-solving. I am passionate about turning ideas into practical solutions and excited to contribute to projects that push engineering innovation forward.</p>
+			<p>I’m Nathan, a mechanical engineering student at Cal Poly Pomona graduating in December 2026 who enjoys turning ideas into functional, reliable hardware. My experience spans mechanical design, FEA & structural analysis, GD&T & tolerance stackup analysis, design for manufacturing, prototyping, testing, and hands-on fabrication. As a Formula SAE Hubs and Uprights System Captain and mechanical engineering intern at Span, I’ve designed and manufactured performance-critical components, collaborated across disciplines, and improved products with cost, reliability, and manufacturability in mind. Outside of school and work, I build projects from scratch—from an electric drift kart to a bike suspension data-acquisition system—because I believe the best way to understand engineering is to build, test, and learn by doing.</p>
 
 				<div class="tab-titles">
 					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -48,18 +70,23 @@
 				</div>
 				<div class="tab-contents active-tab" id="skills">
 					<ul>
-						<li><span>CAD</span><br>Proficient in SOLIDWORKS and Fusion360, using it in every notable project I have completed.
-						<li><span>Manufacturing</span><br>Experience with welding (flux core, TIG, MIG), 3-axis CNC mill & lathe, sheet metal forming, casting, and hand+power tools</li>
-						<li><span>Computational Analysis</span><br>Utilizing software simulations: SOLIDWORKS FEA, fatigue analysis, Topology Optimization; Fusion360 Generative Design</li>
-						<li><span>Software</span><br>MATLAB(+Simulink) and Excel </li>
-						<li><span>Electronics</span><br>Motor Controllers, Arduinos, Soldering, FDM 3D printing</li>
+						<li><span>Mechanical Design and CAD</span><br>SolidWorks, Fusion 360, part and assembly design, engineering drawings, GD&T, tolerance 								  stack-up analysis, DFM/DFA, generative design
+						
+						<li><span>Analysis & Simulation</span><br> Static, fatigue, and modal FEA, structural analysis, CFD, hand calculations, vibration 							analysis, MATLAB, Simulink, Excel </li>
+
+
+						<li><span>Manufacturing and Fabrication</span><br>CNC machining coordination, manual milling and turning, FDM 3D printing, MIG and flux-							  core welding, sheet-metal fabrication, fixture design, drill press, hand tools, shop floor experience</li>
+
+						<li><span>Testing and Validation</span><br>Test planning, experimental design, data acquisition, sensor integration, accelerometer 								  measurements, thermocouple wiring, MATLAB data analysis, root-cause analysis, Failure Modes and Effects Analysis (FMEA), Fault 							  Tree Analysis (FTA)</li>
+
+						<li><span>Controls & Integration</span><br>
+							  Arduino, PWM motor control, electrical troubleshooting, soldering, wiring, and mechanical-electrical system integration</li>
 					</ul>
 				</div>
 				<div class="tab-contents" id="experience">
 					<ul>
-						<li><span>Dr. Nina Vinh DDS (2018-2023)</span><br>Assistant</li>
-						<li><span>Sports Basement (2021-2022)</span><br>Bike Floor/Rentals Associate</li>
-						<li><span>Cold Stone Creamery (2024-2024)</span><br>Team Member</li>
+						<li><span>Span (May 2026-Present)</span><br>Mechanical Engineering Intern</li>
+						<li><span>Bronco Motorsports (Sept 2024-Apr 2026)</span><br>Hubs and Uprights Captain</li>
 					</ul>
 				</div>
 				<div class="tab-contents" id="education">
@@ -90,12 +117,24 @@
 <!------------portfolio--------->
 <div id="portfolio">
 	<div class="container">
-		<h1 class="sub-title">Portfolio</h1>	
+		<h1 class="sub-title">Project Portfolio</h1>	
 		<div class="work-list">
+
+			<div class="work">
+    				<img src="images/GenUprightThumbnail.png" >
+   				<div class="layer">
+        				<h3>Generative Design Hubs and Uprights 2025-2026</h3>
+        				<p>Utilized generative shape design to create new hubs and uprights resulting in up to a 30% weight reduction</p>
+        				<a href="GD_HnU.html">
+            <i class="fa-solid fa-up-right-from-square"></i>
+        </a>
+    </div>
+</div>
+
 			<div class="work">
 				<img src="images/HnU.png" >
 				<div class="layer">
-					<h3>Hubs and Uprights Vehicle System</h3>
+					<h3>Hubs and Uprights Vehicle System 2024-2025</h3>
 					<p>Designed, built, tested the Hubs and Uprights subsystem for the FSAE BM-25 racecar. </p>
 					<a href="HnU.html#music"><i class="fa-solid fa-up-right-from-square"></i></a>
 				</div>
@@ -108,6 +147,19 @@
 					<a href="KrazyKartOutline.html"><i class="fa-solid fa-up-right-from-square"></i></a>
 				</div>
 			</div>
+
+<div class="work">
+    				<img src="images/mtb_pic.jpg" >
+   				<div class="layer">
+        				<h3>Mountain Bike Suspension Measurement System</h3>
+        				<p>Created a mountain bike suspension measurement system using linear potentiometers and a Teensy 4.1 microcontroller to analyze suspension 						   behavior for tuning and experiments</p>
+        				<a href="mtb.html">
+            <i class="fa-solid fa-up-right-from-square"></i>
+        </a>
+    </div>
+</div>
+
+
 			<div class="work">
 				<img src="images/intake.jpg" >
 				<div class="layer">
@@ -115,23 +167,7 @@
 					<p>Developed a prototype intake plenum design with a 5.5% increase in mass flow rate versus the original.</p>
 					<a href="intake.html"><i class="fa-solid fa-up-right-from-square"></i></a>
 				
-				</div>
-			</div>
-			<div class="work">
-				<img src="images/BallMachineTN.png" >
-				<div class="layer">
-					<h3>Baseball Pitching Machine</h3>
-					<p>Designed and built a baseball pitching machine that could launch a baseball ~40mph from a little league pitching mound.</p>
-					<a href="ballmachine.html#music"><i class="fa-solid fa-up-right-from-square"></i></a>
-				
-				</div>
-			</div>
-			<div class="work">
-				<img src="images/Clevis.png" >
-				<div class="layer">
-					<h3></h3>
-					<p>Improved the serviceability of the design of a clevis that connects the racecar's suspension arm to the upright.</p>
-					<a href="clevis.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+
 				
 				</div>
 			</div>

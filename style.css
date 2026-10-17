@@ -52,7 +52,7 @@ nav ul li a:hover::after{
         width: 100%;
 }
 .header-text{
-        margin-top: 20%;
+        margin-top: 5%;
         font-size: 30px;
         animation: fade-out linear;
 }
@@ -67,6 +67,66 @@ animation-range: exit -1px;
         font-size: 70px;
         color:#3e47bd ;
 }
+
+.header-text h1 span{
+        font-size: 70px;
+        color:#3e47bd ;
+}
+
+/* Header contact information */
+.header-content {
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+}
+
+.header-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-right: 5%;
+        margin-top: 20px;
+	transform: translateY(100px);
+}
+
+.header-contact a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        transition: color 0.3s, transform 0.3s;
+}
+
+.header-contact a i {
+        color: #3e47bd;
+        width: 28px;
+        margin-right: 8px;
+        font-size: 28px;
+}
+
+.header-contact a:hover {
+        color: #7982fd;
+        transform: translateX(5px);
+}
+
+.header-contact .linkedin-link {
+        font-size: 24px;
+        font-weight: 500;
+}
+
+.header-contact .linkedin-link i {
+        color: #0A66C2;
+        font-size: 32px;
+}
+
+/*------about------*/
+#about{
+        padding: 80px 0;
+        color: #ababab;
+}
+
 /*------about------*/
 #about{
         padding: 80px 0;
@@ -82,7 +142,7 @@ flex-wrap: wrap;
         flex-basis: 35%;
         border-radius: 15px ;
         padding-bottom: 5px;
-        padding-top: 120px;
+        padding-top: 65px;
         padding-left: 7px;
         padding-right: 7px;
         margin-bottom: 100px;
@@ -413,6 +473,19 @@ nav .fa-solid{
         .header-text h1{
                 font-size: 30px;
         }
+
+.header-content {
+        min-height: 500px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 35px;
+}
+
+.header-contact {
+        margin: 0;
+        align-self: flex-start;
+}
        
        
         nav .fa-solid{
@@ -468,4 +541,11 @@ nav .fa-solid{
         margin-top: -10px;
         display: block;
 
+}
+
+
+.header-contact .linkedin-link,
+.header-contact .linkedin-link span {
+        font-size: 30px;
+        line-height: 1;
 }
